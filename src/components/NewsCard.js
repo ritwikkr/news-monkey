@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import Wrapper from "../style/NewsCardStyle";
 import Date from "./Date";
 

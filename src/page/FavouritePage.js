@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import NewsPallate from "../components/NewsPallate";
 import Wrapper from "../style/FavouritePageStyle";
 
