@@ -2,7 +2,11 @@ import React from "react";
 import Wrapper from "../style/NavbarStyle";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ propUp }) {
+  function inputChangeHandler(e) {
+    const searchText = e.target.value;
+    propUp(searchText);
+  }
   return (
     <Wrapper>
       <div className="logo">
@@ -13,7 +17,11 @@ function Navbar() {
         </Link>
       </div>
       <div className="search-bar">
-        <input type="text" placeholder="Search your news..." />
+        <input
+          type="text"
+          placeholder="Search your news..."
+          onChange={inputChangeHandler}
+        />
         <i className="fa-solid fa-magnifying-glass"></i>
       </div>
       {/* <div className="favourite">

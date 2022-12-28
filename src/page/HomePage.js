@@ -4,7 +4,7 @@ import NewsPallate from "../components/NewsPallate";
 import Wrapper from "../style/HomePageStyle";
 import Loading from "../components/Loading";
 
-function HomePage() {
+function HomePage({ searchHandler }) {
   // State
   const [news, setNews] = useState([]);
 
@@ -29,7 +29,7 @@ function HomePage() {
   }
   return (
     <Wrapper>
-      <NewsPallate news={news} />
+      <NewsPallate news={news} propDown={searchHandler} />
     </Wrapper>
   );
 }

@@ -25,7 +25,6 @@ function NewsCard({
           <p className="date">
             <Date date={publishedAt} />
           </p>
-          {console.log(isFav)}
           <i
             className={`${isFav ? `fa-solid` : `fa-regular`} fa-heart`}
             onClick={() => setToFavHandler()}
